@@ -25,7 +25,7 @@
     [TestCase(1, 2, 270, "1,2,WEST")]
     public void ShouldGetCorrectReportOutput(int x, int y, int direction, string output)
     {
-      var command = new ReportCommand(); 
+      var command = new ReportCommand();
       var board = Substitute.For<IBoard>();
       board.IsInitialised.Returns(true);
       board.Position.Returns(new Position {X = x, Y = y});

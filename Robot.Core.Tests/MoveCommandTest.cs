@@ -21,7 +21,7 @@
     [Test]
     public void ShouldCallCorrectCommandOnBoard()
     {
-      var command = new MoveCommand(); 
+      var command = new MoveCommand();
       var board = Substitute.For<IBoard>();
       board.IsInitialised.Returns(true);
 

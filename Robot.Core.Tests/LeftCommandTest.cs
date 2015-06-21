@@ -21,7 +21,7 @@
     [Test]
     public void ShouldCallCorrectDirectionOnBoard()
     {
-      var command = new LeftCommand(); 
+      var command = new LeftCommand();
       var board = Substitute.For<IBoard>();
       board.IsInitialised.Returns(true);
 

@@ -1,5 +1,4 @@
-﻿
-namespace Robot.Core.Tests
+﻿namespace Robot.Core.Tests
 {
   using Commands;
   using FluentAssertions.Common;
@@ -22,7 +21,7 @@ namespace Robot.Core.Tests
     [Test]
     public void ShouldCallCorrectDirectionOnBoard()
     {
-      var command = new RightCommand(); 
+      var command = new RightCommand();
       var board = Substitute.For<IBoard>();
       board.IsInitialised.Returns(true);
 

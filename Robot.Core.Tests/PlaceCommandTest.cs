@@ -27,9 +27,9 @@
     }
 
     [Test]
-    [TestCase("PLACE 0,1,WEST", 0, 1, 270) ]
+    [TestCase("PLACE 0,1,WEST", 0, 1, 270)]
     [TestCase("PLACE 1,1,NORTH", 1, 1, 0)]
-    [TestCase("PLACE 2,1,EAST",2, 1, 90)]
+    [TestCase("PLACE 2,1,EAST", 2, 1, 90)]
     [TestCase("PLACE 1,3,SOUTH", 1, 3, 180)]
     public void ShouldCallSetupOnBoard(string start, int x, int y, int direction)
     {
